@@ -1,0 +1,9 @@
+<div class="topics-block">
+    <h2>Topics</h2>
+    {% assign tags = site.tags %}
+    {% for tag in tags %}
+    <a href="/tag/{{ tag[0] | slugify }}/" class="topic-pill">
+        {{ tag[0] }}
+    </a>
+    {% endfor %}
+</div>

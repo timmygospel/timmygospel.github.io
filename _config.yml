@@ -1,94 +1,47 @@
-# ---------------------------
-# SITE SETTINGS
-# ---------------------------
-title: "MM"
-description: "Write an awesome description for your site."
-email:
+title: "Timmy’s Dev Magazine"
+description: "Technical insights, tutorials, UX thinking, front-end development, productivity, and modern web design trends."
 
-twitter_username: timmygospel
+url: "https://timmygospel.github.io"
+baseurl: ""
+
 github_username: timmygospel
+twitter_username: timmygospel
 
 minimal_mistakes_skin: default
 search: true
 
-# ---------------------------
-# THEME SETTINGS
-# ---------------------------
 markdown: kramdown
 
-# Use the Minimal Mistakes Remote Theme (required)
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
-permalink: /:categories/:title/
-paginate: 5
-paginate_path: /page:num/
-
-timezone:
-
-include:
-  - _pages
-
-sass:
-  load_paths:
-    - _sass
-  style: compressed
-
-# Inject custom CSS
-after_head: |
-
-# ---------------------------
-# PLUGINS
-# ---------------------------
 plugins:
-  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jemoji
   - jekyll-sitemap
   - jekyll-gist
-  - jekyll-feed
-  - jemoji
   - jekyll-include-cache
-  - jekyll-seo-tag   # recommended for better Google search visibility
+  - jekyll-paginate
 
-# ---------------------------
-# AUTHOR PROFILE
-# ---------------------------
+paginate: 10
+paginate_path: "/page:num/"
+
+after_head: |
+  <link rel="stylesheet" href="/assets/css/smashing.css">
+
 author:
   name: "Timmy Gospel"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "My awesome biography goes here."
+  bio: "Developer, designer, and writer exploring the craft of the web."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://timmygospel.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/timmygospel"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-twitter"
       url: "https://twitter.com/timmygospel"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
 
-# ---------------------------
-# FOOTER LINKS
-# ---------------------------
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/timmygospel"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/timmygospel"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
-# ---------------------------
-# DEFAULTS
-# ---------------------------
 defaults:
-  # POSTS
   - scope:
       path: ""
       type: posts
@@ -96,32 +49,12 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
       share: true
-      related: true
 
-  # PAGES
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-
-# ---------------------------
-# ARCHIVES
-# ---------------------------
 category_archive:
   type: liquid
   path: /categories/
 
 tag_archive:
   type: liquid
-  path: /tags/
-  
-navigation:
-  main: main
-
-sidebar:
-  nav: main
-  custom: sidebar-custom
+  path: /tag/
