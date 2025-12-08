@@ -59,3 +59,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tag/
+
+sass:
+  load_paths:
+    - _sass
+  style: compressed
+
