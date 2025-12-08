@@ -27,7 +27,8 @@ paginate: 10
 paginate_path: "/page:num/"
 
 after_head: |
-  <link rel="stylesheet" href="/assets/css/smashing.css">
+  <link rel="stylesheet" href="/assets/css/smashing.css?v=2">
+
 
 author:
   name: "Timmy Gospel"
