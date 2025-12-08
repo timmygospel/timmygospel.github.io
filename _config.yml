@@ -27,7 +27,7 @@ paginate: 10
 paginate_path: "/page:num/"
 
 after_head: |
-  <link rel="stylesheet" href="/assets/css/smashing.css?v=4">
+  <link rel="stylesheet" href="/assets/css/smashing.css?v=5">
 
 
 author:
