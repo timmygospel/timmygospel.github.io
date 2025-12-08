@@ -1,0 +1,7 @@
+<div class="featured-article">
+    {% assign post = site.posts.first %}
+    <a href="{{ post.url | relative_url }}">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.excerpt }}</p>
+    </a>
+</div>

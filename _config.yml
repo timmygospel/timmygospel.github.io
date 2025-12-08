@@ -28,6 +28,14 @@ timezone:
 include:
   - _pages
 
+sass:
+  load_paths:
+    - _sass
+  style: compressed
+
+# Inject custom CSS
+after_head: |
+
 # ---------------------------
 # PLUGINS
 # ---------------------------
@@ -114,3 +122,6 @@ tag_archive:
 navigation:
   main: main
 
+sidebar:
+  nav: main
+  custom: sidebar-custom
