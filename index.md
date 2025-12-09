@@ -8,6 +8,6 @@ author_profile: true
 {% include topics.html %}
 {% include mag-grid.html %}
 
-<div style="background: red; padding: 20px; color: white;">
-  HOMEPAGE CONTENT TEST
+<div style="background:red;color:white;padding:20px;margin-top:20px;">
+  HOMEPAGE CONTENT TEST (THIS SHOULD APPEAR)
 </div>
