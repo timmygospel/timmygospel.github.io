@@ -11,6 +11,10 @@ body {
     font-family: 'Inter', sans-serif;
     color: #333;
 }
+/* Hide Minimal Mistakes default masthead nav */
+.masthead {
+  display: none !important;
+}
 
 /* HEADINGS */
 h1,
