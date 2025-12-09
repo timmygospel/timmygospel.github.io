@@ -10,6 +10,10 @@ body {
     background: #f9f6f2;
     font-family: 'Inter', sans-serif;
     color: #333;
+   
+  padding-top: 110px !important;
+
+
 }
 /* Hide Minimal Mistakes default masthead nav */
 .masthead {
