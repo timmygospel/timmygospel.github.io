@@ -1,6 +1,6 @@
 ---
 title: "Association Learning Explained: Finding Hidden Patterns in Data"
-date: 2026-01-10
+date: 2026-01-09
 categories: [machine-learning]
 tags: [unsupervised-learning, association-rules, data-mining]
 excerpt: "A beginner-friendly explanation of association learning, including support, confidence, lift, and the Apriori, FP-Growth, and Eclat algorithms."
