@@ -1,0 +1,30 @@
+{% assign maxRelated = 3 %}
+{% assign relatedPosts = "" | split: "" %}
+
+{% for post in site.posts %}
+  {% unless post.url == page.url %}
+    {% assign commonTags = 0 %}
+    {% for tag in post.tags %}
+      {% if page.tags contains tag %}
+        {% assign commonTags = commonTags | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    {% if commonTags >= 1 %}
+      {% assign relatedPosts = relatedPosts | push: post %}
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+
+{% if relatedPosts.size > 0 %}
+<div class="related-posts">
+  <p class="related-posts__heading">Related Articles</p>
+  <div class="related-posts__grid">
+    {% for post in relatedPosts limit: maxRelated %}
+    <a href="{{ post.url | relative_url }}" class="related-post-card">
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt | strip_html | truncate: 110 }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

@@ -1,0 +1,9 @@
+{% assign items = include.items | split: "|" %}
+<div class="key-takeaways">
+  <p class="key-takeaways__heading">Key Takeaways</p>
+  <ul>
+    {% for item in items %}
+    <li>{{ item | strip }}</li>
+    {% endfor %}
+  </ul>
+</div>

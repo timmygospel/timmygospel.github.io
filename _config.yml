@@ -1,5 +1,5 @@
-title: "Timmy’s Dev Magazine"
-description: "Technical insights, tutorials, UX thinking, front-end development, productivity, and modern web design trends."
+title: "ML Matters"
+description: "Machine learning explained clearly — from core concepts to AWS SageMaker and real-world applications."
 
 url: "https://timmygospel.github.io"
 baseurl: ""
@@ -27,13 +27,13 @@ paginate: 10
 paginate_path: "/page:num/"
 
 after_head: |
-  <link rel="stylesheet" href="/assets/css/smashing.css?v=5">
+  <link rel="stylesheet" href="/assets/css/smashing.css?v=8">
 
 
 author:
   name: "Timmy Gospel"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "Developer, designer, and writer exploring the craft of the web."
+  bio: "ML practitioner and technical writer. Preparing for the AWS ML Specialty exam and writing about machine learning clearly."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"

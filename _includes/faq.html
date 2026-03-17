@@ -1,0 +1,32 @@
+{% if page.faqs %}
+<h2>FAQ</h2>
+<div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+  {% for faq in page.faqs %}
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <p class="faq-item__question" itemprop="name">{{ faq.q }}</p>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p class="faq-item__answer" itemprop="text">{{ faq.a }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for faq in page.faqs %}
+    {
+      "@type": "Question",
+      "name": {{ faq.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ faq.a | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}

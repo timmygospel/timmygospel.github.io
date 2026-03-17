@@ -1,11 +1,9 @@
 main:
+  - title: Home
+    url: /
   - title: Articles
-    url: /blog/
-  - title: Guides
-    url: /categories/guides/
-  - title: Tutorials
-    url: /categories/tutorials/
-  - title: UX
-    url: /categories/ux/
-  - title: Web Dev
-    url: /categories/webdev/
+    url: /articles/
+  - title: Topics
+    url: /topics/
+  - title: About
+    url: /about/
